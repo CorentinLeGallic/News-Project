@@ -1,0 +1,197 @@
+@import "../Global.scss";
+
+.search-loading-page {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+
+  .loading-text {
+    user-select: none;
+    color: white;
+    font-size: 1.7em;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+
+    h3 {
+      display: inline-block;
+    }
+
+    span {
+      position: relative;
+      top: 0;
+      // transform: translateY(0);
+      // -webkit-transform: rotate(0); /* Safari & Chrome */
+      // -o-transform: rotate(0); /* Opera */
+      // -moz-transform: rotate(0); /* Firefox 4 */
+    }
+
+    & span:nth-of-type(1) {
+      animation: relative-move-y ease-in infinite 1s 0s;
+    }
+    & span:nth-of-type(2) {
+      animation: relative-move-y ease-in infinite 1s 0.33s;
+    }
+    & span:nth-of-type(3) {
+      animation: relative-move-y ease-in infinite 1s 0.66s;
+    }
+  }
+
+  //   .preloader {
+  //     position: relative;
+  //     width: 100px;
+  //     height: 100px;
+  //     border-radius: 50%;
+  //     background-color: transparent;
+  //     border: 2px solid transparent;
+  //     border-left-color: #fff;
+  //     border-top-color: #fff;
+  //     transition: 2s ease;
+  //     animation: rotate-loader 2s infinite linear;
+
+  //     &::before,
+  //     &::after {
+  //       content: "";
+  //       transition: 2s ease;
+  //       position: absolute;
+  //       border-radius: 50%;
+  //       background-color: transparent;
+  //       border: 2px solid transparent;
+  //       border-left-color: #fff;
+  //       border-top-color: #fff;
+  //     }
+
+  //     &::before {
+  //       top: 15px;
+  //       left: 15px;
+  //       bottom: 15px;
+  //       right: 15px;
+  //       animation: rotate-loader 1s infinite linear reverse;
+  //     }
+
+  //     &::after {
+  //       top: 30px;
+  //       left: 30px;
+  //       bottom: 30px;
+  //       right: 30px;
+  //       animation: rotate-loader 2s infinite linear;
+  //     }
+  //   }
+
+  //   & .active {
+  //     width: 50px;
+  //     height: 50px;
+
+  //     &::before {
+  //       top: 8px;
+  //       left: 8px;
+  //       bottom: 8px;
+  //       right: 8px;
+  //     }
+
+  //     &::after {
+  //       top: 15px;
+  //       left: 15px;
+  //       bottom: 15px;
+  //       right: 15px;
+  //     }
+  //   }
+
+  div {
+    // border: 2px solid red;
+    position: relative;
+
+    .preloaderSVG {
+      transform: rotate(-90deg);
+
+      circle {
+        fill: none;
+        stroke: url(#GradientColor);
+        stroke-width: 5px;
+        stroke-dasharray: 314;
+        transition: 0.5s ease stroke-dashoffset;
+      }
+    }
+    .preloader-img {
+      // border: 2px solid green;
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      z-index: 10;
+      left: calc(50% - 40px);
+      top: calc(50% - 40px);
+      opacity: 0;
+      // transition: 0.5s;
+    }
+
+    .preloader-img.active {
+      animation: 0.5s reveal-opacity forwards;
+    }
+  }
+}
+
+// svg {
+//   position: absolute;
+//   top: 0;
+// }
+
+// body {
+//     height: 100%;
+//     width: 100%;
+//     margin: 0;
+//     background-color: rgb(99, 99, 99);
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// #preloader {
+//     position: relative;
+//     width: 20px;
+//     height: 20px;
+//     border-radius: 50%;
+//     background-color: transparent;
+//     border: 1px solid transparent;
+//     border-left-color: #FFF;
+//     border-top-color: #FFF;
+//     animation: loader 2s infinite linear;
+// }
+
+// #preloader::before,
+// #preloader::after {
+//     position: absolute;
+//     content: '';
+//     border-radius: 50%;
+//     background-color: transparent;
+//     border: 1px solid transparent;
+//     border-left-color: #FFF;
+//     border-top-color: #FFF;
+// }
+
+// #preloader::before {
+//     top: 2px;
+//     left: 2px;
+//     bottom: 2px;
+//     right: 2px;
+//     animation: loader 1s infinite linear reverse;
+// }
+
+// #preloader::after {
+//     top: 5px;
+//     left: 5px;
+//     bottom: 5px;
+//     right: 5px;
+//     animation: loader 2s infinite linear;
+// }
+
+// @keyframes loader {
+//     from {transform: rotate(0deg);}
+//     to {transform: rotate(360deg);}
+// }

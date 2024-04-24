@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+
+@mixin center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes reveal-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate-loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes relative-move-y {
+  0% {
+    top: 0;
+  }
+  12% {
+    top: -5px;
+  }
+  25%,
+  100% {
+    top: 0;
+  }
+}
+
+$article-font: Arial, Helvetica, sans-serif;
+$results-title-font: "Roboto";
+$article-hover-font-color: rgb(0, 0, 194);

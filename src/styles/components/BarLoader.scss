@@ -1,0 +1,26 @@
+@import "../Global.scss";
+
+.accueil-loader-container {
+  position: absolute;
+  bottom: 10vh;
+
+  .bar-loader {
+    // background-color: gray;
+    border: 1px solid gray;
+    box-shadow: 1px 0 1px gray, -1px 0 1px gray, 0 1px 1px gray, 0 -1px 1px gray;
+    // box-shadow: 1px 1px 1px gray, -1px -1px 1px gray;
+    height: 20px;
+    position: relative;
+    border-radius: 10px;
+
+    div {
+      border-radius: 10px;
+      // border-top-left-radius: 50%;
+      background-color: #163860;
+      position: absolute;
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+    }
+  }
+}

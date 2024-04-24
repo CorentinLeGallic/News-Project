@@ -1,0 +1,11 @@
+.logo {
+  background: no-repeat url("../../../public/medias/logo-title.png")
+    center/cover;
+}
+
+.homeLogo {
+  position: relative;
+  @include center;
+  opacity: 0;
+  animation: reveal-opacity 3s forwards;
+}

@@ -1,0 +1,20 @@
+@import "../Global.scss";
+
+.accueil {
+  padding-top: 20vh;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: url("../../../public/medias/france-nuit.jpg") center/cover;
+
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+  }
+}

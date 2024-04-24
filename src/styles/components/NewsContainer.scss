@@ -1,0 +1,19 @@
+.news-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.news-image-container.first-news-container {
+  gap: 30px;
+}
+
+.news-image-container.second-news-container {
+  gap: 30px;
+}
+
+.news-no-image-container {
+  margin-top: 40px;
+  gap: 20px;
+}

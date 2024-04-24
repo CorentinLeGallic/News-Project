@@ -1,0 +1,9 @@
+@import "./../Global.scss";
+
+.search-results-title {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: $results-title-font;
+}
